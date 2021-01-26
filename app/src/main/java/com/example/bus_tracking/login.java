@@ -32,7 +32,7 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         username= findViewById(R.id.username);
         password=findViewById(R.id.password);
-        submit=findViewById(R.id.login);
+        submit=findViewById(R.id.log);
         signUp=findViewById(R.id.button2);
         textView=findViewById(R.id.textView3);
 
