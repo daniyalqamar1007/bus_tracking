@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="47dp"
         android:layout_marginRight="47dp"
         android:fontFamily="sans-serif-condensed-medium"
@@ -71,24 +71,32 @@
     <EditText
         android:id="@+id/fname1"
         android:layout_width="166dp"
+
         android:layout_height="51dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginBottom="11dp"
+
+
         android:background="@drawable/green_field"
         android:ems="10"
         android:gravity="center"
         android:hint="First Name"
         android:inputType="textPersonName"
         android:textColorHint="@color/green"
+
         app:layout_constraintBottom_toTopOf="@+id/mobile"
         app:layout_constraintStart_toStartOf="parent" />
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="214dp" />
+
 
     <EditText
         android:id="@+id/lname"
         android:layout_width="166dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="64dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/green_field"
         android:ems="10"
         android:gravity="center"
@@ -96,14 +104,17 @@
         android:inputType="textPersonName"
         android:textColorHint="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toEndOf="@+id/fname1"
+
+
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/repass"
         android:layout_width="349dp"
-        android:layout_height="51dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="12dp"
@@ -124,7 +135,7 @@
     <EditText
         android:id="@+id/pass"
         android:layout_width="349dp"
-        android:layout_height="51dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="12dp"
@@ -144,7 +155,7 @@
     <EditText
         android:id="@+id/mobile"
         android:layout_width="349dp"
-        android:layout_height="51dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="11dp"
@@ -163,7 +174,7 @@
     <EditText
         android:id="@+id/email"
         android:layout_width="349dp"
-        android:layout_height="51dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="14dp"
@@ -201,8 +212,13 @@
         android:id="@+id/editTextPersonName"
         android:layout_width="349dp"
         android:layout_height="51dp"
+
         android:layout_marginTop="32dp"
         android:layout_marginEnd="28dp"
+
+
+        android:layout_marginRight="28dp"
+
         android:background="@drawable/green_field_button"
         android:ems="10"
         android:gravity="center"
@@ -215,7 +231,7 @@
         app:layout_constraintTop_toBottomOf="@+id/repass" />
 
     <TextView
-        android:id="@+id/heading"
+        android:id="@+id/member"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
@@ -247,9 +263,14 @@
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toEndOf="@+id/heading"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintVertical_bias="0.117" />
+
+<!--        app:layout_constraintStart_toEndOf="@+id/member"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />-->
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

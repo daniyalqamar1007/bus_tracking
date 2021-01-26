@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".track">
 
 
@@ -67,15 +68,24 @@
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
+
         android:layout_width="384dp"
         android:layout_height="403dp"
         android:layout_marginBottom="66dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+
+
+        android:layout_marginTop="18dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+>>>>>>> origin/master
 
     <TextView
         android:id="@+id/textView7"
@@ -87,10 +97,10 @@
         android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/mapView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-        app:layout_constraintVertical_bias="0.459" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <LinearLayout
         android:id="@+id/linearLayout8"
