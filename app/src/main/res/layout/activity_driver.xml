@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverActivity" >
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="10"-->
+<!--        android:padding="16dp"-->
+<!--        >-->
+<!--        <ToggleButton-->
+<!--            android:id="@+id/locationswitch"-->
+<!--            android:layout_width="10dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="10"-->
+<!--            android:textOff="OFF"-->
+<!--            android:textOn="ON"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+
+
+<!--    </RelativeLayout>-->
+
+
+
+</fragment>

@@ -11,14 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
         android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
         android:background="@drawable/top_curve"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -38,10 +38,12 @@
             android:layout_width="105dp"
             android:layout_height="111dp"
             android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintHorizontal_bias="0.014"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/no_background" />
 
         <TextView
@@ -72,7 +74,6 @@
         android:layout_width="137dp"
         android:layout_height="186dp"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="88dp"
         android:background="@drawable/curve_box"
         android:orientation="vertical"
@@ -92,7 +93,7 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="58dp"
             android:background="@drawable/curve_box"
             android:fontFamily="sans-serif-medium"
             android:text="Book Ride"
@@ -202,11 +203,15 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="151dp"
+        android:layout_marginBottom="73dp"
         android:fontFamily="sans-serif-medium"
         android:text="WELCOME :)"
         android:textColor="@color/green"
         android:textSize="35dp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="151dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

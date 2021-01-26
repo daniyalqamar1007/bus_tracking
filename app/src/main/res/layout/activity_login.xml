@@ -47,7 +47,7 @@
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
+            <EditText
             android:id="@+id/username"
             android:layout_width="308dp"
             android:layout_height="68dp"

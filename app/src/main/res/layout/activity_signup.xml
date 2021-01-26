@@ -27,7 +27,7 @@
 
 
         <TextView
-            android:id="@+id/heading"
+            android:id="@+id/heading1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -69,19 +69,20 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
 
     <EditText
-        android:id="@+id/fname"
+        android:id="@+id/fname1"
         android:layout_width="166dp"
         android:layout_height="51dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginBottom="11dp"
         android:background="@drawable/green_field"
         android:ems="10"
         android:gravity="center"
         android:hint="First Name"
         android:inputType="textPersonName"
         android:textColorHint="@color/green"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="247dp" />
+        app:layout_constraintBottom_toTopOf="@+id/mobile"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/lname"
@@ -96,7 +97,7 @@
         android:textColorHint="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.387"
-        app:layout_constraintStart_toEndOf="@+id/fname"
+        app:layout_constraintStart_toEndOf="@+id/fname1"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
@@ -197,12 +198,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextPersonName"
         android:layout_width="349dp"
         android:layout_height="51dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/green_field_button"
         android:ems="10"
         android:gravity="center"
@@ -218,10 +218,9 @@
         android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="sans-serif-light"
         android:text="Already a member?"
         android:textColor="@color/green"
@@ -229,18 +228,16 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/log"
         android:layout_width="165dp"
         android:layout_height="46dp"
         android:layout_marginStart="63dp"
-        android:layout_marginLeft="63dp"
-        android:layout_marginTop="17dp"
         android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/green_field_button"
         android:ems="10"
         android:gravity="center"
@@ -251,7 +248,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/heading"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.117" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
