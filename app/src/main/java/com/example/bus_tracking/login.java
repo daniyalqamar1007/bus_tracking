@@ -32,18 +32,17 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         username= findViewById(R.id.username);
         password=findViewById(R.id.password);
-        submit=findViewById(R.id.log);
+        submit=findViewById(R.id.login);
         signUp=findViewById(R.id.button2);
         textView=findViewById(R.id.textView3);
 
 
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
-
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               exist_user();
+                exist_user();
             }
         });
         signUp.setOnClickListener(new View.OnClickListener() {

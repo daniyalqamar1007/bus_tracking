@@ -10,7 +10,7 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 
 import com.example.bus_tracking.Model.DriveInfoModel;
-import com.example.bus_tracking.Service.MyFirebaseMassagingService;
+import com.example.bus_tracking.Servies.MyFirebaseMessagingServices;
 
 import androidx.core.app.NotificationCompat;
 

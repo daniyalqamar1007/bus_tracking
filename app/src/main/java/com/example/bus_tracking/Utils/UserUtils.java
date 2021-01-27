@@ -6,7 +6,7 @@ import android.widget.Toast;
 
 import com.example.bus_tracking.Common;
 import com.example.bus_tracking.Model.TokenModel;
-import com.example.bus_tracking.Service.MyFirebaseMassagingService;
+import com.example.bus_tracking.Servies.MyFirebaseMessagingServices;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;

@@ -38,11 +38,7 @@
             android:theme="@style/AppTheme.NoActionBar" >
 
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
 
@@ -82,7 +78,11 @@
         <activity android:name=".login" />
         <activity android:name=".type_selection" />
         <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data
@@ -90,7 +90,7 @@
             android:value="@string/google_maps_key" />
 
 
-        <service android:name=".Service.MyFirebaseMassagingService">
+        <service android:name=".Servies.MyFirebaseMessagingServices">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
              </intent-filter>
