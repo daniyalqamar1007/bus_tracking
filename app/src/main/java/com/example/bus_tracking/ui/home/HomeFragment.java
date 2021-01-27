@@ -73,7 +73,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     private LocationRequest locationRequest;
     private LocationCallback locationCallback;
     SupportMapFragment mapFragment;
-   String CityName="isl";
+   String CityName;
+   private boolean isFirstime=true;
 
     //online databsaeSystem
 
@@ -83,6 +84,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         public void onDataChange(@NonNull DataSnapshot snapshot) {
             if (snapshot.exists() && currentUserRef != null)
                 currentUserRef.onDisconnect().removeValue();
+
 
         }
 
@@ -153,10 +155,10 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
 
         locationRequest = new LocationRequest();
-        locationRequest.setInterval(5000);
-        locationRequest.setFastestInterval(3000);
+        locationRequest.setInterval(15000);//15sec
+        locationRequest.setFastestInterval(10000);//10secf
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        locationRequest.setSmallestDisplacement(10f);
+        locationRequest.setSmallestDisplacement(50f);//50m
 
         locationCallback = new LocationCallback() {
             @Override
@@ -215,8 +217,6 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                             (Key ,error)-> {
                                 if (error != null)
                                     Snackbar.make(mapFragment.getView(),error.getMessage(),Snackbar.LENGTH_LONG).show();
-                                else
-                                    Snackbar.make(mapFragment.getView(),"You r online",Snackbar.LENGTH_LONG).show();
 
                             });
                     registeronlineSystem();
@@ -351,7 +351,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         {
             Log.e("wrong_error",e.getMessage());
         }
-
+        Snackbar.make(mapFragment.getView(), "You r online", Snackbar.LENGTH_LONG).show();
     }
 
 }
