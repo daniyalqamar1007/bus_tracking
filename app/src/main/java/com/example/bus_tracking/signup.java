@@ -37,6 +37,7 @@ public class signup extends AppCompatActivity {
     String username_1,password_1;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
+    FirebaseUser currentuser;
     FirebaseDatabase database;
     DatabaseReference databaseReference , listener;
 
@@ -60,8 +61,9 @@ public class signup extends AppCompatActivity {
         get_Account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                inti();
+
                registerUser();
+//                inti();
                 startActivity(new Intent(getApplicationContext(),home_Screen.class));
             }
         });
@@ -69,8 +71,9 @@ public class signup extends AppCompatActivity {
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                inti();
+
                 registerUser();
+//                inti();
                 startActivity(new Intent(signup.this,login.class));
             }
         });
@@ -106,9 +109,9 @@ public class signup extends AppCompatActivity {
                     //display some message here
                     Toast.makeText(signup.this,"Successfully registered",Toast.LENGTH_LONG).show();
 
-                    FirebaseUser currentUser= firebaseAuth.getCurrentUser();
+                 currentuser= firebaseAuth.getCurrentUser();
 //                    updateUI(currentUser);
-
+                    inti();
 
                 }else{
                     //display some message here
@@ -149,8 +152,8 @@ public class signup extends AppCompatActivity {
         });
 
 
-
-        databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+//        showREgistration();
+        databaseReference.child(currentuser.getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -212,8 +215,7 @@ public class signup extends AppCompatActivity {
           model.setFirstname(fname.getText().toString());
           model.setPassword(password.getText().toString());
           model.setRating(0.0);
-          databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-            .setValue(model)
+          databaseReference.child(currentuser.getUid()).setValue(model)
                   .addOnFailureListener(new OnFailureListener() {
                       @Override
                       public void onFailure(@NonNull Exception e) {
